@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "093d9f29-4717-4b16-9cd0-dc9bcab55226",
+		"name": "Loan",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Lead",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"user1\",\"age\":19,\"loanAmt\":1000}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:1880/lead",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "1880",
+					"path": [
+						"lead"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Mock Response API",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:1880/mock?name=user3",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "1880",
+					"path": [
+						"mock"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "user3"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
